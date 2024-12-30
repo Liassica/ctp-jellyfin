@@ -1,0 +1,549 @@
+:root {
+  --primary-background-color: #303446;
+  --secondary-background-color: #292c3c;
+  --tertiary-background-color: #232634;
+  --text: #c6d0f5;
+  --submit: #737994;
+  --submit-hover: #babbf1;
+  --item-hover: #babbf1;
+  --menu-hover: #414559;
+  --scrollbar: #838ba7;
+  --select: #414559;
+  --toast: #232634;
+  --card: #babbf1;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar) var(--secondary-background-color);
+}
+
+.skinHeader,
+html {
+  color: #ddd;
+  color: rgba(from var(--text) r g b / 0.8);
+}
+
+.wizardStartForm,
+.ui-corner-all,
+.ui-shadow {
+  background-color: var(--primary-background-color);
+}
+
+.emby-collapsible-button {
+  border-color: #383838;
+  border-color: rgba(from var(--text) r g b / 0.135);
+}
+
+.emby-scrollbuttons {
+  color: var(--text);
+}
+
+.skinHeader-withBackground {
+  background-color: var(--secondary-background-color);
+}
+
+.skinHeader.semiTransparent {
+  backdrop-filter: none !important;
+  background-color: rgba(from var(--tertiary-background-color) r g b / 0.4);
+}
+
+.layout-tv .skinHeader.semiTransparent {
+  background: none;
+}
+
+.pageTitleWithDefaultLogo {
+  background-image: url(../../assets/img/banner-light.png);
+}
+
+.layout-tv .pageTitleWithDefaultLogo {
+  background-image: url(../../assets/img/icon-transparent.png);
+}
+
+.backgroundContainer,
+.dialog,
+.nowPlayingPlaylist,
+.nowPlayingContextMenu,
+html {
+  background-color: var(--primary-background-color);
+}
+
+.backgroundContainer.withBackdrop {
+  background-color: rgba(from var(--tertiary-background-color) r g b / 0.86);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .paper-icon-button-light:hover:not(:disabled) {
+    color: var(--submit);
+    background-color: rgba(from var(--item-hover) r g b / 0.2);
+  }
+}
+
+.paper-icon-button-light:active:not(:disabled) {
+  color: var(--submit);
+  background-color: rgba(from var(--item-hover) r g b / 0.2);
+}
+
+.paper-icon-button-light.show-focus:focus {
+  color: var(--submit);
+}
+
+.fab,
+.raised {
+  background: var(--toast);
+  color: rgba(from var(--text) r g b / 0.87);
+}
+
+.fab:focus,
+.raised:focus {
+  background: #383838;
+}
+
+.button-submit {
+  background: var(--submit);
+  color: var(--text);
+}
+
+.button-submit:focus {
+  background: var(--submit-hover);
+  color: var(--text);
+}
+
+.button-delete {
+  background: rgb(247, 0, 0);
+  color: rgba(from var(--text) r g b / 0.87);
+}
+
+.checkboxLabel {
+  color: inherit;
+}
+
+.checkboxListLabel,
+.inputLabel,
+.inputLabelUnfocused,
+.paperListLabel,
+.textareaLabelUnfocused {
+  color: #bbb;
+  color: rgba(from var(--text) r g b / 0.7);
+}
+
+.inputLabelFocused,
+.selectLabelFocused,
+.textareaLabelFocused {
+  color: var(--submit);
+}
+
+.checkboxOutline {
+  border-color: currentColor;
+}
+
+.collapseContent,
+.formDialogFooter:not(.formDialogFooter-clear),
+.formDialogHeader:not(.formDialogHeader-clear),
+.paperList,
+.visualCardBox {
+  background-color: var(--secondary-background-color);
+}
+
+.layout-tv .formDialogFooter:not(.formDialogFooter-clear) {
+  background-color: transparent;
+}
+
+.defaultCardBackground1 {
+  background-color: var(--card);
+}
+
+.defaultCardBackground2 {
+  background-color: var(--card);
+}
+
+.defaultCardBackground3 {
+  background-color: var(--card);
+}
+
+.defaultCardBackground4 {
+  background-color: var(--card);
+}
+
+.defaultCardBackground5 {
+  background-color: var(--card);
+}
+
+.cardText-secondary,
+.fieldDescription,
+.guide-programNameCaret,
+.listItem .secondary,
+.nowPlayingBarSecondaryText,
+.programSecondaryTitle,
+.secondaryText {
+  color: #999;
+  color: rgba(from var(--text) r g b / 0.5);
+}
+
+.actionsheetDivider {
+  background: #444;
+  background: rgba(from var(--text) r g b / 0.14);
+}
+
+.cardFooter-vibrant .cardText-secondary {
+  color: inherit;
+  opacity: 0.5;
+}
+
+.toast {
+  background: var(--toast);
+  color: var(--text);
+  color: rgba(from var(--text) r g b / 0.87);
+}
+
+.appfooter,
+.playlistSectionButton {
+  background: var(--secondary-background-color);
+  color: #ccc;
+  color: rgba(from var(--text) r g b / 0.78);
+}
+
+.itemSelectionPanel {
+  border: 1px solid var(--submit);
+}
+
+.selectionCommandsPanel {
+  background: var(--submit);
+  color: var(--text);
+}
+
+.upNextDialog-countdownText {
+  color: var(--submit);
+}
+
+.alphaPickerButton {
+  color: #999;
+  color: rgba(from var(--text) r g b / 0.5);
+  background-color: transparent;
+}
+
+.alphaPickerButton-selected {
+  color: var(--text);
+}
+
+.alphaPickerButton-tv:focus {
+  background-color: var(--submit);
+  color: var(--text) !important;
+}
+
+.detailTableBodyRow-shaded:nth-child(even) {
+  background: #1c1c1c;
+  background: rgba(30, 30, 30, 0.9);
+}
+
+.detailRibbon {
+  background: rgba(from var(--secondary-background-color) r g b / 0.8);
+}
+
+.layout-tv .detailRibbon {
+  background: none;
+}
+
+.noBackdropTransparency .detailPageSecondaryContainer {
+  background-color: var(--primary-background-color);
+}
+
+.listItem-border {
+  border-color: rgba(
+    from var(--secondary-background-color) r g b / 0.9
+  ) !important;
+}
+
+.listItem:focus {
+  background: #333;
+}
+
+.listItem:hover {
+  background: var(--tertiary-background-color);
+}
+
+.progressring-spiner {
+  border-color: var(--submit);
+}
+
+.button-flat:hover {
+  color: var(--submit);
+}
+
+.button-link {
+  color: var(--submit);
+}
+
+.mediaInfoText {
+  color: #ddd;
+  background: rgba(170, 170, 190, 0.2);
+}
+
+.emby-input,
+.emby-textarea {
+  color: inherit;
+  background: var(--select);
+  border: 0.16em solid var(--select);
+  border-radius: 0.2em;
+}
+
+.emby-input:focus,
+.emby-textarea:focus {
+  border-color: var(--submit);
+}
+
+.emby-select-withcolor {
+  color: inherit;
+  background: var(--select);
+  border: 0.07em solid var(--select);
+}
+
+.emby-select-withcolor > option {
+  color: inherit;
+  background: #222;
+}
+
+.emby-select-withcolor:focus {
+  border-color: var(--submit) !important;
+}
+
+.emby-select-tv-withcolor:focus {
+  background-color: var(--submit) !important;
+  color: var(--text) !important;
+}
+
+.emby-checkbox:checked + span + .checkboxOutline {
+  border-color: var(--submit);
+}
+
+.emby-checkbox:focus + span + .checkboxOutline {
+  border-color: var(--text);
+}
+
+.emby-checkbox:checked + span + .checkboxOutline,
+.itemProgressBarForeground {
+  background-color: var(--submit);
+}
+
+.emby-checkbox:focus:not(:checked) + span + .checkboxOutline {
+  border-color: var(--submit);
+}
+
+.itemProgressBarForeground-recording {
+  background-color: #cb272a;
+}
+
+.countIndicator,
+.fullSyncIndicator,
+.mediaSourceIndicator,
+.playedIndicator {
+  background: var(--submit);
+}
+
+.fullSyncIndicator {
+  color: var(--text);
+}
+
+.mainDrawer,
+.drawer-open {
+  background-color: var(--primary-background-color);
+}
+
+.navMenuOption:hover {
+  background: var(--menu-hover);
+}
+
+.navMenuOption-selected {
+  background: var(--submit) !important;
+  color: var(--text);
+}
+
+.emby-button.show-focus:focus {
+  background: var(--submit);
+  color: var(--text);
+}
+
+.emby-tab-button {
+  color: #999;
+}
+
+.emby-tab-button-active {
+  color: var(--text);
+}
+
+.emby-tab-button.show-focus:focus {
+  color: var(--submit);
+}
+
+.emby-tab-button:hover {
+  color: var(--submit);
+}
+
+.channelPrograms,
+.guide-channelHeaderCell,
+.programCell {
+  border-color: rgba(from var(--text) r g b / 0.05);
+}
+
+.programCell-sports {
+  background: #3949ab !important;
+}
+
+.programCell-movie {
+  background: #5e35b1 !important;
+}
+
+.programCell-kids {
+  background: #039be5 !important;
+}
+
+.programCell-news {
+  background: #43a047 !important;
+}
+
+.programCell-active {
+  background: #1e1e1e !important;
+}
+
+.guide-channelHeaderCell:focus,
+.programCell:focus {
+  background-color: var(--submit) !important;
+  color: var(--text) !important;
+}
+
+.guide-programTextIcon {
+  color: #1e1e1e;
+  background: #555;
+}
+
+.guide-headerTimeslots {
+  color: inherit;
+}
+
+.guide-date-tab-button {
+  color: #555;
+  color: rgba(from var(--text) r g b / 0.3);
+}
+
+.guide-date-tab-button.emby-tab-button-active,
+.guide-date-tab-button:focus {
+  color: var(--submit);
+}
+
+.guide-date-tab-button.show-focus:focus {
+  background-color: var(--submit);
+  color: var(--text);
+}
+
+.infoBanner {
+  color: #ddd;
+  background: #111;
+  padding: 1em;
+  border-radius: 0.25em;
+}
+
+.ratingbutton-icon-withrating {
+  color: #c33;
+}
+
+.downloadbutton-icon-complete,
+.downloadbutton-icon-on {
+  color: #4285f4;
+}
+
+.playstatebutton-icon-played {
+  color: #c33;
+}
+
+.buttonActive {
+  color: var(--submit) !important;
+}
+
+.card:focus .cardBox.visualCardBox,
+.card:focus .cardBox:not(.visualCardBox) .cardScalable {
+  border-color: var(--submit) !important;
+}
+
+.cardOverlayContainer > .cardOverlayFab-primary {
+  background-color: rgba(from var(--tertiary-background-color) r g b / 0.7);
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px
+    rgba(from var(--tertiary-background-color) r g b / 0.3);
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: var(--scrollbar);
+}
+
+.layout-desktop ::-webkit-scrollbar,
+.layout-tv ::-webkit-scrollbar {
+  width: 0.4em;
+  height: 0.4em;
+}
+
+::-webkit-scrollbar-thumb:horizontal,
+::-webkit-scrollbar-thumb:vertical {
+  border-radius: 2px;
+  background: center no-repeat #888;
+}
+
+.timeslotHeaders-desktop::-webkit-scrollbar {
+  height: 0.7em;
+}
+
+.metadataSidebarIcon {
+  color: var(--submit);
+}
+
+.emby-button.detailFloatingButton {
+  background-color: var(--submit);
+  color: var(--text);
+}
+
+.layout-tv .emby-button.detailFloatingButton:focus {
+  background-color: #f2f2f2;
+  color: var(--submit);
+}
+
+#comicsPlayer,
+#bookPlayer,
+#pdfPlayer {
+  background: var(--primary-background-color);
+}
+
+#comicsPlayer .swiper-pagination {
+  background: var(--primary-background-color);
+  color: var(--text);
+}
+
+#bookPlayer .topButtons {
+  color: var(--text);
+}
+
+#comicsPlayer .actionButtonIcon,
+#pdfPlayer .actionButtonIcon {
+  color: var(--text);
+}
+
+#dialogToc {
+  background-color: var(--primary-background-color);
+}
+
+#dialogToc .bookplayerButtonIcon {
+  color: #ccc;
+}
+
+#dialogToc .bookplayerButtonIcon:hover {
+  color: var(--submit);
+}
+
+#dialogToc .toc li a:link {
+  color: #ccc;
+}
+
+#dialogToc .toc li a:active,
+#dialogToc .toc li a:hover {
+  color: var(--submit);
+}
