@@ -483,6 +483,23 @@ html {
 .mdl-slider::-ms-thumb {
   background-color: var(--item-hover);
 }
+
+.mdl-spinner__layer-1 {
+  border-color: var(--item-hover);
+}
+
+.mdl-spinner__layer-2 {
+  border-color: var(--item-hover);
+}
+
+.mdl-spinner__layer-3 {
+  border-color: var(--item-hover);
+}
+
+.mdl-spinner__layer-4 {
+  border-color: var(--item-hover);
+}
+
 .card:focus .cardBox.visualCardBox,
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
   border-color: var(--submit) !important;
