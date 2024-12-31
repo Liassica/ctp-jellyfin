@@ -463,6 +463,26 @@ html {
   color: var(--submit) !important;
 }
 
+.sliderBubble {
+  background: var(--tertiary-background-color);
+  color: var(--text);
+}
+
+.mdl-slider-background-lower {
+  background-color: var(--item-hover);
+}
+
+.mdl-slider::-webkit-slider-thumb {
+  background-color: var(--item-hover);
+}
+
+.mdl-slider::-moz-range-thumb {
+  background-color: var(--item-hover);
+}
+
+.mdl-slider::-ms-thumb {
+  background-color: var(--item-hover);
+}
 .card:focus .cardBox.visualCardBox,
 .card:focus .cardBox:not(.visualCardBox) .cardScalable {
   border-color: var(--submit) !important;
